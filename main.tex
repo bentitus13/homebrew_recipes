@@ -1,0 +1,38 @@
+\documentclass[letterpaper, 12pt]{article}
+
+\title{MQP Report}
+
+\usepackage[table]{xcolor}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{pdfpages}
+\graphicspath{{./Pictures/}}
+
+\setcounter{secnumdepth}{0}
+
+\usepackage[]{hyperref}
+\hypersetup{
+	pdftitle={},
+	pdfauthor={},
+	pdfsubject={},
+	pdfkeywords={},
+	bookmarksnumbered=true,     
+	bookmarksopen=true,         
+	bookmarksopenlevel=1,       
+	colorlinks=false,            
+	pdfstartview=Fit,           
+}
+
+%Build the custom title page.
+\begin{document}
+	\begin{titlepage}
+		\centering
+		\LARGE
+		\textbf{Homebrew Recipe Experiments!}
+	\end{titlepage}
+
+	\tableofcontents
+	
+	\pagenumbering{arabic}
+	\include{recipes/blackberry_wine}
+	
+\end{document}
